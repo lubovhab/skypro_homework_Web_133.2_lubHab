@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Docker</title>
+      <link rel="stylesheet" type="text/css" href="../css/style.css">
+      <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+      <link rel="shortcut icon" href="../img/fav.ico" type="image/x-icon">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+         .card {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            line-height: 24px;}
+      </style>
+   </head>
+   <body>
+      <!--Card-->
+      <p class="location">
+            <a href="../index.html">Вернуться на главную</a>
+         </p>
+      <div class="card" class="card">
+         <p class="subtitle">Docker</p>
+         <h3 style="margin-left: 25px; text-align: center;">Docker — это платформа для разработки, доставки и запуска приложений в контейнерах</h3>
+         <h3 id="rt-0" style="text-align: center;">Основные команды Docker</h3>
+          <ul>
+            <li>DOCKER PULL — Загрузка образа из реестра</li>
+            <li>DOCKER RUN — Создание и запуск контейнера</li>
+            <li>DOCKER PS — Список запущенных контейнеров</li>
+            <li>DOCKER STOP — Остановка контейнера</li>
+            <li>DOCKER LOGS — Просмотр логов контейнера</li>
+         </ul>
+         <h3 id="rt-1" style="text-align: center;">Основные варианты Dockerfile</h3>
+         <ul>
+            <li>FROM: указывает базовый образ, на основе которого строится наш образ</li>
+            <li>WORKDIR: устанавливает рабочую директорию внутри контейнера</li>
+            <li>COPY: копирует файлы из хост-системы в контейнер</li>
+            <li>RUN: выполняет команду во время сборки образа</li>
+            <li>EXPOSE: информирует Docker о том, что контейнер слушает указанный порт</li>
+            <li>CMD: задает команду, которая будет выполнена при запуске контейнера</li>
+         </ul>
+      </div>
+      <!--footer-->
+      <footer class="animated fadeIn">
+         &copy; 2024. SkyPro
+      </footer>
+   </body>
+</html>

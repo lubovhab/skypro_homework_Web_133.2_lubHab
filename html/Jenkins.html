@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Jenkins</title>
+      <link rel="stylesheet" type="text/css" href="../css/style.css">
+      <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+      <link rel="shortcut icon" href="../img/fav.ico" type="image/x-icon">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+         .card {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            line-height: 24px;}
+      </style>
+   </head>
+   <body>
+      <!--Card-->
+      <p class="location">
+            <a href="../index.html">Вернуться на главную</a>
+         </p>
+      <div class="card" class="card">
+         <p class="subtitle">Jenkins</p>
+         <h3 style="margin-left: 25px; text-align: center;">Jenkins — это популярный инструмент для автоматизации процессов разработки и тестирования ПО</h3>
+         <h3 id="rt-0" style="text-align: center;">Зачем нужен Jenkins</h3>
+          <ul>
+            <li>В части CI (непрерывная интеграция). Инструмент не пишет код и не тестирует сам, он запускает всё нужное в нужный момент. Допустим, разработчик сделал коммит в Git. Jenkins «увидел» это событие через webhook и запустил скрипты сборки и тестирования. Если тесты прошли, он отправляет команду «Сборка успешна» и готовит артефакт — готовый билд приложения. Если что-то сломалось, Jenkins шлёт уведомление в Slack или на почту, чтобы разработчик сразу исправил проблему</li>
+            <li>В части CD (непрерывная доставка/развёртывание). После успешной сборки Jenkins может автоматически отправить билд на тестовый сервер, а потом — на продакшен. Например, после сборки через Ansible или Docker он деплоит приложение на сервер. После деплоя запускает скрипт проверки и, если всё в порядке, отправляет уведомление «Новая версия развёрнута»</li>
+            <li>Автоматизация рутины. Jenkins можно настроить на любые повторяющиеся задачи: выгрузку бэкапов, обновление библиотек, генерацию отчётов по тестам. Он работает по расписанию или по событиям</li>
+            <li>Интеграция с DevOps-инфраструктурой. Jenkins — это «мозг» пайплайна: он сам не хранит код, не разворачивает контейнеры и не управляет кластером, но даёт команды Git, Docker, Kubernetes, Terraform и другим инструментам, связывая их в единый процесс</li>
+         </ul>
+      </div>
+      <!--footer-->
+      <footer class="animated fadeIn">
+         &copy; 2024. SkyPro
+      </footer>
+   </body>
+</html>

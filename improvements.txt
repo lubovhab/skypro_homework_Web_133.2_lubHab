@@ -1,28 +1,48 @@
 При выполнении работы были внесены следующие улучшения
 
 Файл index.html.
-1. Заменен аватар
-2. По моему мнению, расположение текстового описания (блок div) перекрывает интересную картинку фона на страницах: file:///C:/Users/chu4h/Desktop/git_homework/git_homework/skypro_homework_Web_133.2_lubHab/html/cmd.html file:///C:/Users/chu4h/Desktop/git_homework/git_homework/skypro_homework_Web_133.2_lubHab/html/mac.html file:///C:/Users/chu4h/Desktop/git_homework/git_homework/skypro_homework_Web_133.2_lubHab/html/git.html
-3. Ссылка "Вернуться на главную" отвлекает от основного контента. Необходимо проверить расположение ссылки по ТЗ. Мой вариант: ссылка находится вверху страницы, над текстовым полем.
-...
-...
+1. Заменен фавикон href="img/fav.ico" на href="https://my.sky.pro/assets/skypro/favicon.ico"
+2. Заменен аватар src="img/ava.png" на src="ava_new.png"
+2. По моему мнению, расположение текстового описания (селектор "card animated fadeIn") перекрывает интересную картинку фона на страницах: file:///C:/Users/chu4h/Desktop/git_homework/git_homework/skypro_homework_Web_133.2_lubHab/html/cmd.html file:///C:/Users/chu4h/Desktop/git_homework/git_homework/skypro_homework_Web_133.2_lubHab/html/mac.html file:///C:/Users/chu4h/Desktop/git_homework/git_homework/skypro_homework_Web_133.2_lubHab/html/git.html. На главной, используя стиль .card этот блок сдвинула влево
+3. В селектор "card animated fadeIn" добавлены параграфы: "CI/CD", "Docker", "Jenkins" с сылками на новые страницы
 
 Файл cmd.html.
-1. ...
-2. ...
-3. ...
-...
+1. Ссылка "Вернуться на главную" отвлекает от основного контента. Мой вариант: ссылка находится вверху страницы, над текстовым полем. Тег <p> с ссылкой на главную страницу перенесен в body перед классом div. Ссылка отображается над текстовым блоком.
+2. Добавлен текст в селектор "card animated fadeIn":
+- <h3 id="rt-0"> Управление файлами и папками</h3>
+- <h3 id="rt-1">Приложения и процессы</h3>
+- <ul>
+            <li>TOP - показывает подробный список всех процессов</li>
+            <li>KILL PID_число - остановить или прекратить выполнение задачи</li>
+         </ul>
+         <h3 id="rt-3">Системная информация</h3>
+         <ul>
+            <li>DATE – выводит текущую дату и время</li>
+            <li>HOSTNAME – отображает имя компьютера</li>
+         </ul>
+3. В заголовок <h3> добавила style="text-align: center;" для выравнивания заголовков по центру
+4. В стиль .card внесла изменения для более удобного чтения (добавлены отступы сверху и снизу):
+.card {
+            padding-top: 20px;
+            padding-bottom: 20px;}
 
 Файл mac.html.
-1. ...
-2. ...
-3. ...
-...
+1. Тег <p> с ссылкой на главную страницу перенесен в body перед классом div. Ссылка отображается над текстовым блоком.
+2. В стиль .card внесла изменения для более удобного чтения (добавлены отступы сверху и снизу):
+.card {
+            padding-top: 20px;
+            padding-bottom: 20px;}
 
 Файл git.html
-1. Тег <p> с ссылкой на главную страницу перенесен в body перед классом div. Ссылка отображается над текстовым полем.
-2. ...
-3. ...
+1. Тег <p> с ссылкой на главную страницу перенесен в body перед классом div. Ссылка отображается над текстовым блоком.
+2. В стиль .card внесла изменения для более удобного чтения (добавлены отступы сверху и снизу, увеличен межстрочный интервал):
+.card {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            line-height: 24px;}
+3. В заголовке <h3> добавлено выравнивание по центру и отcтуп слева: style="margin-left: 25px; text-align: center;"
 
 Файл README.md
 1. строка 20 слово "вопсользуйтесь" заменено на "воспользуйтесь"
+
+Созданы файлы: CI/CD.html, Docker.html, Jenkins.html с ссылками на главную страницу
